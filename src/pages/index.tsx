@@ -67,10 +67,14 @@ export default function Home() {
         </div>
         <div className={classes.companyOverview}>
           <div className={classes.navBarVertical}>
-            <div className={classes.navBarHeading}></div>
-            {['Welcome', 'Product Capabilities', 'Customer Success Stories', 'File Sharing', 'Our Deck'].map((element) => {
+            <div className={classes.navBarHeading}>Overview</div>
+            <Divider variant='middle' flexItem />
+            {['Welcome', 'Product Capabilities', 'Customer Success Stories', 'File Sharing', 'Our Deck'].map((element, index, arr) => {
               return (
-                <div className={classes.navBarItem} key={element}>{element}</div>
+                <>
+                  <div className={classes.navBarItem} key={element}>{element}</div>
+                  {index + 1 !== arr.length && (<Divider variant='middle' flexItem />)}
+                </>
               )
             })}
           </div>
