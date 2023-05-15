@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import classes from '@/styles/Home.module.css'
 import Header from '@/components/Header'
-import { Divider } from '@mui/material'
+import { Divider, Icon, Badge } from '@mui/material'
 import clsx from 'clsx'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -64,21 +64,79 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
-        <div className={classes.companyOverview}>
-          <div className={classes.navBarVertical}>
-            <div className={classes.navBarHeading}>Overview</div>
-            <Divider variant='middle' flexItem />
-            {['Welcome', 'Product Capabilities', 'Customer Success Stories', 'File Sharing', 'Our Deck'].map((element, index, arr) => {
-              return (
-                <>
-                  <div className={classes.navBarItem} key={element}>{element}</div>
-                  {index + 1 !== arr.length && (<Divider variant='middle' flexItem />)}
-                </>
-              )
-            })}
+          <div className={classes.companyOverview}>
+            <div className={classes.navBarVertical}>
+              <div className={classes.navBarHeading}>Overview</div>
+              <Divider variant='middle' flexItem />
+              {['Welcome', 'Product Capabilities', 'Customer Success Stories', 'File Sharing', 'Our Deck'].map((element, index, arr) => {
+                return (
+                  <>
+                    <div className={classes.navBarItem} key={element}>{element}</div>
+                    {index + 1 !== arr.length && (<Divider variant='middle' flexItem />)}
+                  </>
+                )
+              })}
+            </div>
+            <div className={classes.companyContent}>
+              <div className={classes.companyContentHeader}>
+                <span>Company Profile</span>
+                <div className={classes.headerTools}>
+                  <Icon sx={{ marginTop:-1}}>
+                    <img src="/arrow_down.png" alt="icon" style={{
+                      height: 16, width: 10.5,
+                    }} />
+                  </Icon>
+                  <Divider variant='middle' orientation='vertical' flexItem />
+                  <Icon>
+                    <img src="/eye-off.png" alt="icon" />
+                  </Icon>
+                  <Divider variant='middle' orientation='vertical' flexItem />
+                  <Icon>
+                    <img src="/delete.png" alt="icon" />
+                  </Icon>
+                </div>
+              </div>
+              <div className={classes.companyContentMain}>
+                <div className={clsx(classes.tools, classes.headerTools)}>
+                  <div className={classes.pageNumber}>
+                    <Icon>
+                      <img src="/pdf.png" alt="icon" style={{ height: 24, width: 22 }} />
+                    </Icon>
+                    1/15
+                  </div>
+                  <Divider variant='middle' orientation='vertical' flexItem />
+                  <Icon>
+                    <img src="/arrow_download.png" alt="icon" style={{ height: 20, width: 14.5, }} />
+                  </Icon>
+                  <Divider variant='middle' orientation='vertical' flexItem />
+                  <Icon>
+                    <img src="/zoom_out.png" alt="icon" />
+                  </Icon>
+                  <Divider variant='middle' orientation='vertical' flexItem />
+                  <Icon>
+                    <img src="/zoom_in.png" alt="icon" />
+                  </Icon>
+                  <Divider variant='middle' orientation='vertical' flexItem />
+                  <Icon>
+                    <img src="/open.png" alt="icon" />
+                  </Icon>
+                </div>
+                <div className={classes.companyTagline}>
+                  <img src='/wework-logo.png' alt='logo' />
+                  <span>{"For all the ways you work, we're here"}</span>
+                </div>
+              </div>
+              <div className={classes.contentShareTools}>
+                <Badge badgeContent={5} color='success'>
+                  <img src="/chat.png" alt="icon" style={{ height: 25, width: 25 }} />
+                </Badge>
+                <hr />
+                <img src="/share.png" alt="icon" />
+              </div>
+            </div>
           </div>
         </div>
+
       </main>
     </>
   )
