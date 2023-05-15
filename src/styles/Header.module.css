@@ -1,0 +1,35 @@
+.headerRoot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 30px;
+}
+.logo {
+  width: 38;
+  height: 38;
+  color: #657372;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+  gap: 30px;
+  color: #657372;
+  align-items: center;
+
+  
+}
+
+.icons > img{
+  height:45;
+  width:45;
+  border: 1px solid #D3D7D7;
+  border-radius: 50%;
+}
+.icon {
+  display: flex;
+  height: inherit;
+  width: inherit;
+}
