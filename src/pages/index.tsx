@@ -81,7 +81,7 @@ export default function Home() {
               <div className={classes.companyContentHeader}>
                 <span>Company Profile</span>
                 <div className={classes.headerTools}>
-                  <Icon sx={{ marginTop:-1}}>
+                  <Icon sx={{ marginTop: -1 }}>
                     <img src="/arrow_down.png" alt="icon" style={{
                       height: 16, width: 10.5,
                     }} />
@@ -98,28 +98,19 @@ export default function Home() {
               </div>
               <div className={classes.companyContentMain}>
                 <div className={clsx(classes.tools, classes.headerTools)}>
-                  <div className={classes.pageNumber}>
-                    <Icon>
+                  <div style={{ display: 'flex', gap: 30 }}>
+                    <div className={classes.pageNumber}>
                       <img src="/pdf.png" alt="icon" style={{ height: 24, width: 22 }} />
-                    </Icon>
-                    1/15
+                      1/15
+                    </div>
+                    <img src="/arrow_download.png" alt="icon" style={{ height: 20, width: 14.5, }} />
                   </div>
                   <Divider variant='middle' orientation='vertical' flexItem />
-                  <Icon>
-                    <img src="/arrow_download.png" alt="icon" style={{ height: 20, width: 14.5, }} />
-                  </Icon>
+                  <img src="/zoom_out.png" alt="icon" />
                   <Divider variant='middle' orientation='vertical' flexItem />
-                  <Icon>
-                    <img src="/zoom_out.png" alt="icon" />
-                  </Icon>
+                  <img src="/zoom_in.png" alt="icon" />
                   <Divider variant='middle' orientation='vertical' flexItem />
-                  <Icon>
-                    <img src="/zoom_in.png" alt="icon" />
-                  </Icon>
-                  <Divider variant='middle' orientation='vertical' flexItem />
-                  <Icon>
-                    <img src="/open.png" alt="icon" />
-                  </Icon>
+                  <img src="/open.png" alt="icon" />
                 </div>
                 <div className={classes.companyTagline}>
                   <img src='/wework-logo.png' alt='logo' />

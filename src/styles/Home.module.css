@@ -1,237 +1,251 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* padding: 6rem; */
-  min-height: 100vh;
-  background: #f2fbf9;
-}
+@media screen and (min-width: 744px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 6rem; */
+    min-height: 100vh;
+    background: #f2fbf9;
+  }
 
-.mainContent {
-  padding: 15px 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
+  .mainContent {
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
-.pageHeadingContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  .pageHeadingContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .heading {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 42.63px;
+    color: #04433b;
+  }
+  .publishButton {
+    width: 150px;
+    height: 50px;
+    background-color: #00b686;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Proxima Nova Rg";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner {
+    width: 100%;
+    position: relative;
+  }
+  .bannerContainer {
+    display: flex;
+    position: relative;
+    /* flex-direction: column; */
+  }
+  .secondaryBanner {
+    position: absolute;
+    bottom: -10%;
+    left: 2%;
+    max-width: 170px;
+    max-height: 70px;
+  }
+  .scopeContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Proxima Nova Rg";
+    font-size: 25px;
+    color: #233735;
+    font-weight: 700;
+  }
+  .actionPlanContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .actionPlanCTA {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7b8786;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .actionPlanCTABold {
+    font-size: 18px;
+    color: #00b686;
+    font-weight: 700;
+  }
+  .actionPlanProgress {
+    display: flex;
+    gap: 3px;
+  }
+  .progressBarItem {
+    width: 10px;
+    height: 8px;
+    background: #d3d7d7;
+  }
+  .progressBarItem:first-child {
+    border-radius: 100px 0px 0px 100px;
+    background: #00b686;
+  }
+  .progressBarItem:last-child {
+    border-radius: 0px 100px 100px 0px;
+  }
+  .actionTabsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Proxima Nova Rg";
+    font-weight: 700;
+    font-size: 16px;
+    color: #657372;
+    border-bottom: 1px solid #bdc3c2;
+  }
+  .tabsGroup {
+    display: flex;
+    gap: 5px;
+  }
+  .tab {
+    padding: 10px;
+    border: 1px solid #bdc3c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .tab:first-child {
+    color: #00b686;
+    background-color: #fff;
+  }
+  .companyOverview {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: "Proxima Nova Rg";
+    align-items: flex-start;
+  }
+  .navBarVertical {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    align-self: flex-start;
+    white-space: nowrap;
+  }
+  .navBarHeading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #657372;
+  }
+  .navBarItem {
+    color: #7b8786;
+    font-size: 14px;
+  }
+  .companyContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .companyContentHeader {
+    display: flex;
+    font-size: 25px;
+    color: #233735;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerTools {
+    padding: 0px 5px;
+    border-radius: 5px;
+    border: 1px solid #d3d7d7;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .headerTools img {
+    height: 20px;
+    width: 20px;
+  }
+  .headerTools > hr {
+    height: 20px;
+  }
+  .companyContentMain {
+    width: 100%;
+    background-image: url("/wework-tablet.png");
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+  }
+  .tools {
+    padding: 5px 15px;
+    background-color: #fff;
+    opacity: 0.7;
+    max-width: max-content;
+    color: #233735;
+    font-size: 14px;
+    gap: 20px;
+  }
+  .tools img {
+    height: 18px;
+    width: 18px;
+  }
+  .pageNumber {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .companyTagline {
+    padding: 20px;
+    background: #fff;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20.6693px;
+    color: #000;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .contentShareTools {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .contentShareTools > hr {
+    height: 15px;
+    border: 1px solid #d3d7d7;
+  }
 }
-.heading {
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 42.63px;
-  color: #04433b;
-}
-.publishButton {
-  width: 150px;
-  height: 50px;
-  background-color: #00b686;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 700;
-  font-family: "Proxima Nova Rg";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.banner {
-  width: 100%;
-  position: relative;
-}
-.bannerContainer {
-  display: flex;
-  position: relative;
-  /* flex-direction: column; */
-}
-.secondaryBanner {
-  position: absolute;
-  bottom: -10%;
-  left: 2%;
-}
-.scopeContainer {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Proxima Nova Rg";
-  font-size: 25px;
-  color: #233735;
-  font-weight: 700;
-}
-.actionPlanContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.actionPlanCTA {
-  font-size: 16px;
-  font-weight: 400;
-  color: #7b8786;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-}
-.actionPlanCTABold {
-  font-size: 18px;
-  color: #00b686;
-  font-weight: 700;
-}
-.actionPlanProgress {
-  display: flex;
-  gap: 3px;
-}
-.progressBarItem {
-  width: 10px;
-  height: 8px;
-  background: #d3d7d7;
-}
-.progressBarItem:first-child {
-  border-radius: 100px 0px 0px 100px;
-  background: #00b686;
-}
-.progressBarItem:last-child {
-  border-radius: 0px 100px 100px 0px;
-}
-.actionTabsContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  font-family: "Proxima Nova Rg";
-  font-weight: 700;
-  font-size: 16px;
-  color: #657372;
-  border-bottom: 1px solid #bdc3c2;
-}
-.tabsGroup {
-  display: flex;
-  gap: 5px;
-}
-.tab {
-  padding: 10px;
-  border: 1px solid #bdc3c2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: none;
-  border-radius: 5px 5px 0px 0px;
-}
-.tab:first-child {
-  color: #00b686;
-  background-color: #fff;
-}
-.companyOverview {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  gap: 20px;
-  font-family: "Proxima Nova Rg";
-  align-items: flex-start;
-}
-.navBarVertical {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  background-color: #fff;
-  align-items: center;
-  gap: 15px;
-  border-radius: 10px;
-  align-self: flex-start;
-  white-space: nowrap;
-}
-.navBarHeading {
-  font-size: 18px;
-  font-weight: 700;
-  color: #657372;
-}
-.navBarItem {
-  color: #7b8786;
-  font-size: 14px;
-}
-.companyContent {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-between;
-  gap: 30px;
-}
-.companyContentHeader {
-  display: flex;
-  font-size: 25px;
-  color: #233735;
-  font-weight: 700;
-  justify-content: space-between;
-  align-items: center;
-}
-.headerTools {
-  padding: 0px 5px;
-  border-radius: 5px;
-  border: 1px solid #d3d7d7;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.headerTools img {
-  height: 20px;
-  width: 20px;
-}
-.headerTools > hr {
-  height: 20px;
-}
-.companyContentMain {
-  width: 100%;
-  background-image: url("/wework.png");
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
-  position: relative;
-  border-radius: 10px;
-}
-.tools {
-  padding: 5px;
-  background-color: #fff;
-  opacity: 0.7;
-  max-width: max-content;
-  color: #233735;
-  font-size: 14px;
-}
-.tools img {
-  height: 18px;
-  width: 18px;
-}
-.pageNumber {
-  display: flex;
-  gap: 3px;
-  justify-content: center;
-  align-items: center;
-}
-.companyTagline {
-  padding: 20px;
-  background: #fff;
-  opacity: 0.8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 20.6693px;
-  color: #000;
-  gap: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.contentShareTools {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-.contentShareTools > hr {
-  height: 15px;
-  border: 1px solid #D3D7D7
+@media screen and (min-width: 1440px) {
+  .secondaryBanner {
+    max-width: none;
+    max-height: none;
+  }
+  .navBarVertical {
+    display: flex;
+  }
 }
