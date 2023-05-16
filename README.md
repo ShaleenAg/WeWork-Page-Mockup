@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Live Link
 
-https://guileless-twilight-c656d1.netlify.app/'
+https://guileless-twilight-c656d1.netlify.app/
 
 ## Getting Started
 
