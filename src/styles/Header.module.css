@@ -71,7 +71,7 @@
 }
 @media screen and (min-width: 744px) {
   .modalButton {
-    display: none;
+    display: none !important;
   }
   .icons {
     display: flex;
