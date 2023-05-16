@@ -40,8 +40,6 @@
   flex-direction: column;
   gap: 20px;
   font-family: "Proxima Nova Rg";
-  /* min-width: 300px; */
-  border: 1px solid red;
 }
 .modalProfileInfo {
   display: flex;

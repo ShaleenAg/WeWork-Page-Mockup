@@ -1,14 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import Image from 'next/image'
+import { useState } from 'react'
 import { Inter } from 'next/font/google'
 import classes from '@/styles/Home.module.css'
 import Header from '@/components/Header'
 import { Divider, Icon, Badge } from '@mui/material'
 import clsx from 'clsx'
 const inter = Inter({ subsets: ['latin'] })
-
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 export default function Home() {
+  const [selectedTab, setSelectedTab] = useState('Basic Info')
   return (
     <>
       <Head>
@@ -51,13 +52,14 @@ export default function Home() {
             <div className={classes.tabsGroup}>
               {['Basic Info', 'Files', 'Mutual Action Plan', 'Contact'].map((element, index) => {
                 return (
-                  <div className={classes.tab} key={element}>{element}</div>)
+                  <div className={clsx(classes.tab, {
+                    [classes.tabSelected]: selectedTab.toLowerCase() === element.toLowerCase()
+                  })} key={element}>{element}</div>)
               })}
             </div>
-            <div className={classes.tabGroup}>
+            
+            <div className={classes.tabsGroup}>
               <div className={classes.tab} style={{
-                background: 'none',
-                color: '#657372'
               }}>
                 Internal Actions
               </div>
@@ -94,6 +96,9 @@ export default function Home() {
                   <Icon>
                     <img src="/delete.png" alt="icon" />
                   </Icon>
+                </div>
+                <div className={classes.mobileHeaderTools}>
+                  <MoreVertIcon />
                 </div>
               </div>
               <div className={classes.companyContentMain}>
