@@ -6,7 +6,7 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#0971f1",
+      main: "#F2FBF9",
       darker: "#053e85",
     },
     neutral: {
@@ -16,10 +16,8 @@ const theme = createTheme({
     success: {
       main: "#00B686",
       contrastText: "#fff",
-
     },
   },
-  
 });
 
 declare module "@mui/material/styles" {
@@ -27,7 +25,6 @@ declare module "@mui/material/styles" {
     status: {
       danger: React.CSSProperties["color"];
     };
-    
   }
 
   interface Palette {
@@ -53,4 +50,4 @@ declare module "@mui/material/styles" {
   }
 }
 
-export default theme
+export default theme;

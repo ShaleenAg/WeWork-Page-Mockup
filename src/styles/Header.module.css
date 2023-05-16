@@ -14,22 +14,68 @@
   font-weight: bold;
 }
 .icons {
-  display: flex;
+  display: none;
   gap: 30px;
   color: #657372;
   align-items: center;
-
-  
 }
 
-.icons > img{
-  height:45;
-  width:45;
-  border: 1px solid #D3D7D7;
+.icons > img {
+  height: 45;
+  width: 45;
+  border: 1px solid #d3d7d7;
   border-radius: 50%;
 }
 .icon {
   display: flex;
   height: inherit;
   width: inherit;
+}
+.modalRoot {
+  background: #f2fbf9 !important;
+}
+.modalContent {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Proxima Nova Rg";
+  /* min-width: 300px; */
+  border: 1px solid red;
+}
+.modalProfileInfo {
+  display: flex;
+  gap: 10px;
+}
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.profileInfo span:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: #233735;
+}
+.profileInfo span:last-child {
+  font-size: 12px;
+  color: #7b8786;
+}
+.modalIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modalIcon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 744px) {
+  .modalButton {
+    display: none;
+  }
+  .icons {
+    display: flex;
+  }
 }
